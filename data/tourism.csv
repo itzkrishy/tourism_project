@@ -1,11 +1,11 @@
 CustomerID,ProdTaken,Age,TypeofContact,CityTier,Occupation,Gender,NumberOfPersonVisiting,PreferredPropertyStar,MaritalStatus,NumberOfTrips,Passport,OwnCar,NumberOfChildrenVisiting,Designation,MonthlyIncome,PitchSatisfactionScore,ProductPitched,NumberOfFollowups,DurationOfPitch
-1,0,25,Self Inquiry,1,Salaried,Male,1,3,Single,1,0,1,0,Manager,50000,3,Standard,2,10
-2,1,30,Company Invited,2,Freelancer,Female,2,4,Married,2,1,0,1,Engineer,60000,4,Deluxe,3,15
-3,0,35,Self Inquiry,3,Salaried,Male,1,3,Single,1,0,1,0,Manager,55000,3,Standard,2,12
-4,1,40,Company Invited,1,Freelancer,Female,2,4,Married,2,1,0,1,Engineer,65000,4,Deluxe,3,18
-5,0,45,Self Inquiry,2,Salaried,Male,1,3,Single,1,0,1,0,Manager,70000,3,Standard,2,11
-6,1,50,Company Invited,3,Freelancer,Female,2,4,Married,2,1,0,1,Engineer,75000,4,Deluxe,3,16
-7,0,28,Self Inquiry,1,Salaried,Male,1,3,Single,1,0,1,0,Manager,52000,3,Standard,2,13
-8,1,33,Company Invited,2,Freelancer,Female,2,4,Married,2,1,0,1,Engineer,62000,4,Deluxe,3,19
-9,0,38,Self Inquiry,3,Salaried,Male,1,3,Single,1,0,1,0,Manager,68000,3,Standard,2,14
-10,1,42,Company Invited,1,Freelancer,Female,2,4,Married,2,1,0,1,Engineer,72000,4,Deluxe,3,17
+1,0,25,Self Inquiry,1,Salaried,Male,1,3,Single,2,0,1,0,Manager,50000,3,Basic,2,10
+2,1,30,Company Invited,2,Freelancer,Female,2,4,Married,3,1,0,1,Executive,60000,4,Standard,3,15
+3,0,35,Self Inquiry,3,Salaried,Male,1,3,Single,2,0,1,0,Manager,55000,3,Basic,2,12
+4,1,40,Company Invited,1,Freelancer,Female,2,4,Married,3,1,0,1,Executive,65000,4,Standard,3,18
+5,0,45,Self Inquiry,2,Salaried,Male,1,3,Single,2,0,1,0,Manager,70000,3,Basic,2,14
+6,1,50,Company Invited,3,Freelancer,Female,2,4,Married,3,1,0,1,Executive,75000,4,Standard,3,20
+7,0,28,Self Inquiry,1,Salaried,Male,1,3,Single,2,0,1,0,Manager,52000,3,Basic,2,11
+8,1,33,Company Invited,2,Freelancer,Female,2,4,Married,3,1,0,1,Executive,62000,4,Standard,3,16
+9,0,38,Self Inquiry,3,Salaried,Male,1,3,Single,2,0,1,0,Manager,57000,3,Basic,2,13
+10,1,42,Company Invited,1,Freelancer,Female,2,4,Married,3,1,0,1,Executive,67000,4,Standard,3,19
