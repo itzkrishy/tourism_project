@@ -10,8 +10,8 @@ from sklearn.preprocessing import LabelEncoder
 
 # Define constants for the dataset and output paths
 # When run from /content/tourism_project_local/model_building, data is at ../data
-DATASET_PATH = "data/tourism.csv"
-output_dir = "data" # This is now relative to the script's CWD
+DATASET_PATH = "../data/tourism.csv"
+output_dir = "../data" # This is now relative to the script's CWD
 os.makedirs(output_dir, exist_ok=True) # Ensure output directory exists
 
 df = pd.read_csv(DATASET_PATH)
