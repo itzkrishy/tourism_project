@@ -1,3 +1,4 @@
+
 name: Tourism Project Pipeline
 
 on:
@@ -16,10 +17,10 @@ jobs:
         with:
           python-version: '3.9'
       - name: Install Dependencies
-        run: pip install -r tourism_project/requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Data Registration Check
-        run: python tourism_project/model_building/data_register.py
-      # Assuming 'tourism.csv' is committed to the 'tourism_project/data' directory
+        run: python model_building/data_register.py
+      # Assuming 'tourism.csv' is committed to the 'data' directory at the root of the repo
       # This job primarily ensures the data structure is in place.
 
   data-prep:
@@ -32,9 +33,9 @@ jobs:
         with:
           python-version: '3.9'
       - name: Install Dependencies
-        run: pip install -r tourism_project/requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Data Preparation
-        run: python tourism_project/model_building/prep.py
+        run: python model_building/prep.py
 
 
   model-training:
@@ -47,9 +48,9 @@ jobs:
         with:
           python-version: '3.9'
       - name: Install Dependencies
-        run: pip install -r tourism_project/requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Model Training
-        run: python tourism_project/model_building/train.py
+        run: python model_building/train.py
 
   deploy-streamlit-app:
     runs-on: ubuntu-latest
@@ -62,14 +63,14 @@ jobs:
           python-version: '3.9'
       - name: Install Streamlit App Dependencies
         # Use the specific requirements.txt for the Streamlit app
-        run: pip install -r tourism_project/deployment/requirements.txt
+        run: pip install -r deployment/requirements.txt
       - name: Verify Streamlit App Readiness
-        # This step verifies the Streamlit app can be run. 
-        # Actual deployment would typically involve pushing to a dedicated hosting service 
-        # like Streamlit Cloud, Google Cloud Run, AWS ECS, or a Docker Registry, 
+        # This step verifies the Streamlit app can be run.
+        # Actual deployment would typically involve pushing to a dedicated hosting service
+        # like Streamlit Cloud, Google Cloud Run, AWS ECS, or a Docker Registry,
         # often triggered by this GitHub Actions workflow.
         # For example, to run locally for testing (not actual deployment in CI):
-        # streamlit run tourism_project/deployment/app.py --server.port 8501 --server.address 0.0.0.0 & sleep 10
+        # streamlit run deployment/app.py --server.port 8501 --server.address 0.0.0.0 & sleep 10
         run: |
           echo "Streamlit app files are prepared for deployment."
           echo "To deploy, commit the 'tourism_project' directory to your GitHub repository."
