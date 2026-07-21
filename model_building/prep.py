@@ -9,9 +9,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Define constants for the dataset and output paths
-# Updated path to be relative to /content when script is run from /content
-DATASET_PATH = "tourism_project_local/data/tourism.csv"
-output_dir = "tourism_project_local/data"
+# When run from /content/tourism_project_local/model_building, data is at ../data
+DATASET_PATH = "../data/tourism.csv"
+output_dir = "../data" # This is now relative to the script's CWD
 os.makedirs(output_dir, exist_ok=True) # Ensure output directory exists
 
 df = pd.read_csv(DATASET_PATH)
