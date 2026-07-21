@@ -15,7 +15,8 @@ import joblib
 import os
 
 # Define data paths, updated to be relative to the root of the cloned GitHub repository
-data_dir = "data"
+# When run from /content/tourism_project_local/model_building, data is at ../data
+data_dir = "../data"
 Xtrain_path = os.path.join(data_dir, "Xtrain.csv")
 Xtest_path = os.path.join(data_dir, "Xtest.csv")
 ytrain_path = os.path.join(data_dir, "ytrain.csv")
@@ -82,7 +83,7 @@ print("F1-Score:", f1_score(ytest, y_pred_test))
 print("ROC AUC:", roc_auc_score(ytest, y_proba_test))
 
 # Save best model locally
-model_output_dir = "model" # Updated path
+model_output_dir = "../model" # Updated path
 os.makedirs(model_output_dir, exist_ok=True)
 model_filename = os.path.join(model_output_dir, "best_tourism_prediction_model.joblib")
 joblib.dump(best_model, model_filename)
